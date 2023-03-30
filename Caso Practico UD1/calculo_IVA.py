@@ -13,12 +13,11 @@ valor_entrada = input("Introzuca el importe (para introducir un valor con decima
 Reviso que el valor se corresponda con un float. En caso contrario, se muestra un mensaje de error
 '''
 if isFloat(valor_entrada):
-    importe = float(valor_entrada)
     # Compruebo que el importe sea mayor que 0. Se entiende que el calculo no aplica para importes negativos
-    if importe > 0:
-        iva_importe = importe * IVA
-        total = importe + iva_importe
-        print("El IVA para un importe de", importe, "€ es de", iva_importe, "€")
+    if float(valor_entrada) > 0:
+        iva_importe = float(valor_entrada) * IVA
+        total = float(valor_entrada) + iva_importe
+        print("El IVA para un importe de", float(valor_entrada), "€ es de", iva_importe, "€")
         print("El total (importe + IVA) corresponde a", total, "€")
     else:
         print("El importe introducido debe ser mayor que 0.")
