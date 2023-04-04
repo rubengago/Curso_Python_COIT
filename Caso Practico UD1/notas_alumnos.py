@@ -16,15 +16,15 @@ for i in range(NUM_ALUMNOS):
     input_text="Introduzca un valor para la nota del alumno " + str(i + 1) + ": "
     nota = input(input_text)
     '''
-    Chequeo que el valor introducido sea un valor de tipo float. 
+    Chequeo que el valor introducido sea un valor de tipo float y con un valor entre 0 y 10. 
     En caso contrario muestro mensaje de error
     '''
-    if isFloat(nota):
+    if isFloat(nota) and float(nota)>=0 and float(nota)<=10:
         # Valido si la nota se corresponde con un aprobado o no
         if float(nota) >= 5:
             num_aprobados += 1
     else:
-        print("El valor introducido para la nota del alumno", i, "no es correcto.")
+        print("El valor introducido para la nota del alumno", i + 1, "no es correcto.")
         exit(1)
 
 print("El numero de alumnos aprobados es de", num_aprobados)
