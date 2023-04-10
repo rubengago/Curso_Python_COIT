@@ -1,0 +1,25 @@
+EJERCICIO 1 
+
+Uso de paquetes en Python:
+1) El archivo conversor_pesos.py contiene las funciones:
+	a.    convertir_gramos.
+	b.    convertir_toneladas.
+	c.    convertir_onza.
+
+	Las funciones reciben como parámetro un valor (kilos) y devuelven la conversión de dicho valor (a gramos, toneladas y onzas).
+
+2) Conversor_grados.py contiene las funciones:
+	a.    convertir_fahrenheit
+	b.    convertir_kelvin
+
+	Las funciones recibirán como parámetro una temperatura en grados centígrados y la función hará la conversión correspondiente.
+
+El paquete "conversores" contiene ambos archivos.
+
+El programa solicita al usuario que indique si desea convertir un peso o una temperatura y a qué unidad quiere realizar la conversión.
+
+EJERCICIO 2
+
+El programa solicita el ingreso de los datos de una persona: nombre, apellidos y dni y almacena dichos datos en un archivo. Asimismo, verifica que los datos guardados en el archivo coinciden con los tecleados.
+
+El programa realiza el manejo de excepciones correspondiente.
