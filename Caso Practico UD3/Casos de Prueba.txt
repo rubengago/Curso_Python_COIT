@@ -1,0 +1,31 @@
+DETALLE DE LOS CASOS DE PRUEBA:
+Se adoptan las siguientes consideraciones:
+- La edad solo puede ser un numero entero
+
+Se definen las siguientes particiones de equivalencia:
+- Una edad entre 0 y 17 años proporcionará el mismo resultado del programa -> Falso (Menor de edad)
+- Una edad mayor o igual a 18 años proporcionará el mismo resultado del programa -> Verdadero (Mayor de edad)
+
+Caso de prueba #1
+- Condicion: Edad = -10
+- Salida: Error
+
+Caso de prueba #2:
+- Condicion: Edad = 0
+- Salidad: Falso
+
+Caso de prueba #3:
+- Condicion: Edad = 10
+- Salidad: Falso
+
+Caso de prueba #4:
+- Condicion: Edad = 17
+- Salidad: Falso
+
+Caso de prueba #5:
+- Condicion: Edad = 18
+- Salidad: Verdadero
+
+Caso de prueba #6:
+- Condicion: Edad = 79
+- Salidad: Verdadero
